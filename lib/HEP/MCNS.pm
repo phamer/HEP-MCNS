@@ -635,12 +635,9 @@ HEP::MCNS - converts HEP MC numbers into particle names
 
 version 0.01
 
-=head1 SYNOPSIS
-	use HEP::MCNS 'particle_name';
-	my $electron_name = particle_name( 11 );
-	my $bzero_name = particle_name( 511 );
+=head1 FUNCTIONS
 
-=func particle_name()
+=head2 particle_name()
 
 takes the Monte Carlo number as input and prints the particle name 
 
