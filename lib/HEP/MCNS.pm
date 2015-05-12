@@ -5,6 +5,18 @@ package HEP::MCNS;
 
 # ABSTRACT: converts HEP MC numbers into particle names
 
+=head1 SYNOPSIS
+
+	use HEP::MCNS 'particle_name';
+	my $electron_name = particle_name( 11 );
+	my $bzero_name = particle_name( 511 );
+
+=func particle_name()
+
+takes the Monte Carlo number as input and prints the particle name 
+
+=cut
+
 use Exporter qw( import );
 
 our @EXPORT_OK = qw( particle_name );
