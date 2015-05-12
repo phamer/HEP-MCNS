@@ -3,6 +3,8 @@ use warnings;
 
 package HEP::MCNS;
 
+# ABSTRACT: converts HEP MC numbers into particle names
+
 use Exporter qw( import );
 
 our @EXPORT_OK = qw( particle_name );
