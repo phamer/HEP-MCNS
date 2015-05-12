@@ -10,4 +10,3 @@ dist.ini
 lib/HEP/MCNS.pm
 t/release-pod-coverage.t
 t/release-pod-syntax.t
-weaver.ini
