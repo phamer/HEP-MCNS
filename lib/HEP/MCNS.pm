@@ -637,7 +637,7 @@ version 0.01
 
 =head1 FUNCTIONS
 
-=head2 particle_name
+=head2 particle_name()
 takes the Monte Carlo number as input and prints the particle name 
 
 =head1 SYNOPSIS
