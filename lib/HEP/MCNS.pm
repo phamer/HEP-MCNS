@@ -635,7 +635,7 @@ HEP::MCNS - converts HEP MC numbers into particle names
 
 version 0.01
 
-=head1 METHODS
+=head1 FUNCTIONS
 
 =head2 particle_name
 takes the Monte Carlo number as input and prints the particle name 
