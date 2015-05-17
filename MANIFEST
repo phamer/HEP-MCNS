@@ -8,5 +8,6 @@ Makefile.PL
 README
 dist.ini
 lib/HEP/MCNS.pm
+t/00-get-particle-name.t
 t/release-pod-coverage.t
 t/release-pod-syntax.t

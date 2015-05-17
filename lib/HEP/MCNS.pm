@@ -641,6 +641,13 @@ version 0.01
 	my $electron_name = particle_name( 11 );
 	my $bzero_name = particle_name( 511 );
 
+=head1 DESCRIPTION
+
+The PDG Monte Carlo Numbering Scheme assigns a unique identifier to each particle.
+This module converts those numbers into readable particle names.
+
+LaTeX output is planned but not yet implemented
+
 =head1 FUNCTIONS
 
 =head2 particle_name()
