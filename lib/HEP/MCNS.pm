@@ -643,8 +643,10 @@ version 0.01
 
 =head1 DESCRIPTION
 
-The PDG Monte Carlo Numbering Scheme assigns a unique identifier to each particle.
+The L<Monte Carlo Numbering Scheme|http://pdg.lbl.gov/2014/reviews/rpp2014-rev-monte-carlo-numbering.pdf> assigns a unique identifier to each particle.
 This module converts those numbers into readable particle names.
+
+If any number is missing/wrong, please file an issue.
 
 LaTeX output is planned but not yet implemented
 
