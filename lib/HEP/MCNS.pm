@@ -11,6 +11,13 @@ package HEP::MCNS;
 	my $electron_name = particle_name( 11 );
 	my $bzero_name = particle_name( 511 );
 
+=head1 DESCRIPTION
+
+The PDG Monte Carlo Numbering Scheme assigns a unique identifier to each particle.
+This module converts those numbers into readable particle names.
+
+LaTeX output is planned but not yet implemented
+
 =func particle_name()
 
 takes the Monte Carlo number as input and prints the particle name 
