@@ -7,7 +7,7 @@ use warnings;
 use ExtUtils::MakeMaker;
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "converts HEP MC numbers into particle names",
+  "ABSTRACT" => "converts HEP MC numbers into particle names and vice versa",
   "AUTHOR" => "Philipp Hamer <philha\@cpan.org>",
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => 0

@@ -3,7 +3,7 @@ use warnings;
 
 package HEP::MCNS;
 $HEP::MCNS::VERSION = '0.02';
-# ABSTRACT: converts HEP MC numbers into particle names
+# ABSTRACT: converts HEP MC numbers into particle names and vice versa
 
 
 use Exporter qw( import );
@@ -641,7 +641,7 @@ __END__
 
 =head1 NAME
 
-HEP::MCNS - converts HEP MC numbers into particle names
+HEP::MCNS - converts HEP MC numbers into particle names and vice versa
 
 =head1 VERSION
 
@@ -658,7 +658,7 @@ version 0.02
 =head1 DESCRIPTION
 
 The L<Monte Carlo Numbering Scheme|http://pdg.lbl.gov/2014/reviews/rpp2014-rev-monte-carlo-numbering.pdf> assigns a unique identifier to each particle.
-This module converts those numbers into readable particle names.
+This module converts those numbers into readable particle names and vice versa.
 
 If any number is missing/wrong, please file an issue.
 

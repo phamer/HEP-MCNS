@@ -1,5 +1,5 @@
 {
-   "abstract" : "converts HEP MC numbers into particle names",
+   "abstract" : "converts HEP MC numbers into particle names and vice versa",
    "author" : [
       "Philipp Hamer <philha@cpan.org>"
    ],
