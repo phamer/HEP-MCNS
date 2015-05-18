@@ -652,8 +652,8 @@ version 0.02
 	use HEP::MCNS qw(particle_name particle_code);
 	my $electron_name = particle_name( 11 );
 	my $bzero_name = particle_name( 511 );
-	my $bplus_code = particle_name( 'B+' );
-	my $dstar_code = particle_name( 'D*0' );
+	my $bplus_code = particle_code( 'B+' );
+	my $dstar_code = particle_code( 'D*0' );
 
 =head1 DESCRIPTION
 
