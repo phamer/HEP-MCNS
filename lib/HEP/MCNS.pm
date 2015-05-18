@@ -8,11 +8,7 @@ $HEP::MCNS::VERSION = '0.01';
 
 use Exporter qw( import );
 
-<<<<<<< HEAD
 our @EXPORT_OK = qw( particle_name particle_code );
-=======
-our @EXPORT_OK = qw( particle_name );
->>>>>>> 25be3b6696408940ebb38aac97956e6d673ef287
 
 my %particles = (
 
@@ -616,10 +612,7 @@ my %particles = (
 
 );
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 25be3b6696408940ebb38aac97956e6d673ef287
 sub particle_name
 {
 	return "" unless @_;
@@ -627,7 +620,6 @@ sub particle_name
 	return $particles{ $_[0] } || $_[0];
 }
 
-<<<<<<< HEAD
 
 sub particle_code
 {
