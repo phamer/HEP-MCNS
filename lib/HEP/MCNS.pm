@@ -8,7 +8,7 @@ $HEP::MCNS::VERSION = '0.01';
 
 use Exporter qw( import );
 
-our @EXPORT_OK = qw( particle_name );
+our @EXPORT_OK = qw( particle_name particle_code );
 
 my %particles = (
 
@@ -612,11 +612,23 @@ my %particles = (
 
 );
 
+
 sub particle_name
 {
 	return "" unless @_;
 
 	return $particles{ $_[0] } || $_[0];
+}
+
+
+sub particle_code
+{
+	return 0 unless @_;
+
+	my $lcname = lc shift;
+	my @results = grep { lc( $particles{ $_ } ) eq $lcname } keys %particles;
+
+	return $results[0] // 0;
 }
 
 1;
@@ -641,11 +653,24 @@ version 0.01
 	my $electron_name = particle_name( 11 );
 	my $bzero_name = particle_name( 511 );
 
+=head1 DESCRIPTION
+
+The L<Monte Carlo Numbering Scheme|http://pdg.lbl.gov/2014/reviews/rpp2014-rev-monte-carlo-numbering.pdf> assigns a unique identifier to each particle.
+This module converts those numbers into readable particle names.
+
+If any number is missing/wrong, please file an issue.
+
+LaTeX output is planned but not yet implemented
+
 =head1 FUNCTIONS
 
-=head2 particle_name()
+=head2 particle_name
 
-takes the Monte Carlo number as input and prints the particle name 
+takes the Monte Carlo number as input and prints the particle name
+
+=head2 particle_code
+
+takes a particle name and returns the MC number code
 
 =head1 AUTHOR
 
