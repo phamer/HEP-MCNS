@@ -20,10 +20,6 @@ If any number is missing/wrong, please file an issue.
 
 LaTeX output is planned but not yet implemented
 
-=func particle_name()
-
-takes the Monte Carlo number as input and prints the particle name 
-
 =cut
 
 use Exporter qw( import );
@@ -631,6 +627,12 @@ my %particles = (
 	-5334 => "anti-Omega_b*+",
 
 );
+
+=func particle_name
+
+takes the Monte Carlo number as input and prints the particle name
+
+=cut
 
 sub particle_name
 {
