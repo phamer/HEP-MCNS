@@ -7,9 +7,12 @@ package HEP::MCNS;
 
 =head1 SYNOPSIS
 
-	use HEP::MCNS 'particle_name';
+	use HEP::MCNS qw(particle_name particle_code);
 	my $electron_name = particle_name( 11 );
 	my $bzero_name = particle_name( 511 );
+	my $bplus_code = particle_name( 'B+' );
+	my $dstar_code = particle_name( 'D*0' );
+
 
 =head1 DESCRIPTION
 
