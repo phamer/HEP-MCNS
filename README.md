@@ -23,9 +23,13 @@ LaTeX output is planned but not yet implemented
 
 # FUNCTIONS
 
-## particle\_name()
+## particle\_name
 
-takes the Monte Carlo number as input and prints the particle name 
+takes the Monte Carlo number as input and prints the particle name
+
+## particle\_code
+
+takes a particle name and returns the MC number code
 
 # AUTHOR
 
