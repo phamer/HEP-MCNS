@@ -2,7 +2,7 @@ use strict;
 use warnings;
 
 package HEP::MCNS;
-$HEP::MCNS::VERSION = '0.01';
+$HEP::MCNS::VERSION = '0.02';
 # ABSTRACT: converts HEP MC numbers into particle names
 
 
@@ -645,13 +645,15 @@ HEP::MCNS - converts HEP MC numbers into particle names
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
-	use HEP::MCNS 'particle_name';
+	use HEP::MCNS qw(particle_name particle_code);
 	my $electron_name = particle_name( 11 );
 	my $bzero_name = particle_name( 511 );
+	my $bplus_code = particle_name( 'B+' );
+	my $dstar_code = particle_name( 'D*0' );
 
 =head1 DESCRIPTION
 
