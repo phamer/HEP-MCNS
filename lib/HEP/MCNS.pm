@@ -24,7 +24,7 @@ LaTeX output is planned but not yet implemented
 
 use Exporter qw( import );
 
-our @EXPORT_OK = qw( particle_name );
+our @EXPORT_OK = qw( particle_name particle_code );
 
 my %particles = (
 
@@ -652,7 +652,7 @@ sub particle_code
 	return 0 unless @_;
 
 	my $lcname = lc shift;
-	my @results = grep { $particles{ $_ } eq $lcname } keys %particles;
+	my @results = grep { lc( $particles{ $_ } ) eq $lcname } keys %particles;
 
 	return $results[0] // 0;
 }
