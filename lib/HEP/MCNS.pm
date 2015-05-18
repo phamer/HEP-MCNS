@@ -641,4 +641,20 @@ sub particle_name
 	return $particles{ $_[0] } || $_[0];
 }
 
+=func particle_code
+
+takes a particle name and returns the MC number code
+
+=cut
+
+sub particle_code
+{
+	return 0 unless @_;
+
+	my $lcname = lc shift;
+	my @results = grep { $particles{ $_ } eq $lcname } keys %particles;
+
+	return $results[0] // 0;
+}
+
 1;
