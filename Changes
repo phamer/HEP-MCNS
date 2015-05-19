@@ -8,3 +8,6 @@ Revision history for HEP-MCNS
 
 0.021	Mo 18 Mai 2015 15:12:07 CEST
 	- SYNOPSIS FIXED
+
+0.022	Di 19 Mai 2015 13:04:43 CEST
+	- updated for old perl 5.8

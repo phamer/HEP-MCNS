@@ -4,7 +4,7 @@ HEP::MCNS - converts HEP MC numbers into particle names and vice versa
 
 # VERSION
 
-version 0.021
+version 0.022
 
 # SYNOPSIS
 

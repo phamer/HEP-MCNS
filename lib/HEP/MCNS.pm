@@ -657,7 +657,9 @@ sub particle_code
 	my $lcname = lc shift;
 	my @results = grep { lc( $particles{ $_ } ) eq $lcname } keys %particles;
 
-	return $results[0] // 0;
+	# 5.8.X is still used on some CentOS/SL ..., so // is not implemented yet
+	return 0 unless defined $results[0];
+	return $results[0];
 }
 
 1;
