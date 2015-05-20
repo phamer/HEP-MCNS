@@ -2,7 +2,7 @@ use strict;
 use warnings;
 
 package HEP::MCNS;
-$HEP::MCNS::VERSION = '0.021';
+$HEP::MCNS::VERSION = '0.022';
 # ABSTRACT: converts HEP MC numbers into particle names and vice versa
 
 
@@ -628,7 +628,9 @@ sub particle_code
 	my $lcname = lc shift;
 	my @results = grep { lc( $particles{ $_ } ) eq $lcname } keys %particles;
 
-	return $results[0] // 0;
+	# 5.8.X is still used on some CentOS/SL ..., so // is not implemented yet
+	return 0 unless defined $results[0];
+	return $results[0];
 }
 
 1;
@@ -645,7 +647,7 @@ HEP::MCNS - converts HEP MC numbers into particle names and vice versa
 
 =head1 VERSION
 
-version 0.021
+version 0.022
 
 =head1 SYNOPSIS
 
